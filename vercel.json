@@ -3,5 +3,6 @@
     { "source": "/(.*)", "destination": "/" }
   ],
   "installCommand": "pip install -r requirements.txt --no-cache-dir",
-  "buildCommand": "echo 'Build completed'"
+  "buildCommand": "echo 'Build completed'",
+  "outputDirectory": "."
 }
