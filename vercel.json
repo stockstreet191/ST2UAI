@@ -4,5 +4,18 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "app.py" }
+  ],
+  "functions": {
+    "app.py": {
+      "maxDuration": 30
+    }
+  },
+  "ignore": [
+    ".git",
+    "node_modules",
+    "*.pyc",
+    "__pycache__",
+    ".next/cache",
+    "public/assets"
   ]
 }
