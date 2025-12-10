@@ -38,3 +38,8 @@ if prompt := st.chat_input("问 ST2U、股票、销售技巧？"):
             messages = client.beta.threads.messages.list(thread_id=st.session_state.thread_id)
             response = messages.data[0].content[0].text.value
             st.markdown(response)
+
+# === Vercel 必须的启动方式（重点！千万别删）===
+if __name__ == "__main__":
+    import streamlit.web.bootstrap as bootstrap
+    bootstrap.run("app.py", is_hello=False, args=[], flag_options={})
